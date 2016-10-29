@@ -1,0 +1,89 @@
+.carousel
+    position: relative
+
+    &__item
+        display: block
+        width: 100%
+        height 360px
+        overflow: hidden
+        position: relative
+        background-size: cover
+        background-position: center
+
+    &__item-img
+        display block
+        height 100%
+
+    &__item-desc
+        position: absolute
+        z-index: 1
+        bottom 20px
+        right 0
+        padding 25px
+        width 80%
+        font-size: 20px
+        font-family: $opensans
+        background rgba(#fff, 0.8)
+        color $color-main-dark
+        text-align: center
+        line-height: 1.3
+        &:before
+            content ''
+            position: absolute
+            height 100%
+            width 6px
+            left -6px
+            top 0
+            background url(../images/carousel-title-arrow.png) repeat-y
+
+    &__item-desc-content
+        display inline-block
+        text-align: left
+
+    &__item-desc-big-text
+        font-family: $base-ff-bold
+        font-size: 50px
+        text-align: center;
+        line-height: 1
+
+    &__control
+        position: absolute
+        width 50px
+        height 100%
+        cursor: pointer
+        transition all 0.3s
+        user-select none
+        z-index: 2
+        top 0
+        left 0
+        &:before, &:after
+            content ''
+            position: absolute
+            top 50%
+            left 50%
+            width: 2px
+            height 30px
+            background #fff
+
+        &:before
+            transform translate(-50%, -50%) rotateZ(30deg)
+            margin-top -13px
+        &:after
+            transform translate(-50%, -50%) rotateZ(-30deg)
+            margin-top 13px
+
+        &_next
+            left auto
+            right 0
+            transform: rotateY(180deg);
+
+        &:hover
+            background-color: rgba($color-main, 0.5)
++below($mobile)
+    .carousel
+        position: relative
+
+        &__item
+            display: block
+            width: 100%
+            height 200px

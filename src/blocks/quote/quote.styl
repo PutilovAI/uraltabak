@@ -1,0 +1,27 @@
+.quote
+    margin 40px 0
+    padding 30px
+    position: relative
+    border-top 1px solid #cdcdcd
+    border-bottom 1px solid #cdcdcd
+    &:after, &:before
+        content ''
+        pos-center-w()
+        width 40px
+        height @width
+        background-color #fff
+        background-image url(../images/sprite-icon.png)
+    &:after
+        bottom -20px
+        background-position -265px -2px
+    &:before
+        top -20px
+        background-position -317px -8px
+
+    &__text
+        font-style: italic
+        color $color-main
+        margin-bottom 20px
+        text-align: center
+        &:last-child
+            margin-bottom 0

@@ -1,0 +1,36 @@
+.wrapper
+    width 100%
+    height 100%
+    &__page
+        width 100%
+        min-height 100%
+        display flex
+        justify-content: space-between
+        flex-direction: column
+    &__popups
+        display none
+
+    &__content
+        center(max-width: 1400px)
+        position: relative
+        padding 30px
+        display flex
+
+    &__content-second
+        width 180px
+        margin-right -180px
+
+    &__content-main
+        padding-left: 195px;
+        width 100%
+
++below($laptop)
+    .wrapper
+        &__content-second
+            position: absolute;
+            left -220px;
+            width 220px
+            margin-right 0px
+
+        &__content-main
+            padding-left: 0px

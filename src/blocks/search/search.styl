@@ -1,0 +1,50 @@
+.search
+    position: relative
+    width 100%
+    &__input
+        position: relative
+        text-align: right
+        padding-right 45px
+        border 1px solid transparent
+        line-height: 30px
+        font-size: $base-fs
+        outline none
+        width 100%
+        max-width 150px
+        background-color transparent
+        transition: all 0.3s ease
+        height 30px
+        +placeholder()
+            color: $color-main
+            font-size: $base-fs
+            font-family: $base-ff
+
+        &:focus
+            background-color: #fff
+            max-width 200px
+
+    &__button
+        width 18px
+        height 18px
+        pos-center-h()
+        right 10px
+        background: url(../images/search.svg) no-repeat center;
+        background-size: 100%
+        border none
+        outline none
+        cursor pointer
++below($laptop)
+    .search
+        &__input
+            position: relative
+            text-align: right
+            padding-right 45px
+            padding-left 10px
+            border 1px solid rgba($color-main, 0.5)
+            max-width 100%
+            background-color transparent
+            text-align: left
+
+            &:focus
+                background-color: rgba(#fff, 0.6)
+                max-width 100%

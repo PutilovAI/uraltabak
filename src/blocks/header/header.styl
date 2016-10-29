@@ -1,0 +1,104 @@
+.header
+    width 100%
+    position: relative
+    box-shadow: 0 2px 2px 0 #cacaca
+    background: url(../images/pattern-header.jpg) top left;
+    &__container
+        min-height: 113px
+        width: 100%
+        height: 0px // Для IE 11 иначе не воспринимает значение min-height
+        display flex
+        align-items: center
+        position: relative
+    &__item
+        display: inline-block
+        vertical-align: middle
+        margin-left 30px
+        &:first-child
+            margin-left 0
+
+    &__logo
+        width 180px
+        margin-right 15px
+
+    &__city
+        margin-right: 30px
+        display: inline-block
+        vertical-align: middle
+        margin-left -10px
+    &__phone
+        display: inline-block
+        vertical-align: middle
+        position: relative
+        margin-right: 30px
+
+
+    &__search
+        position: absolute
+        right 0
+        pos-center-h()
+
+    &__item_contacts
+        position: relative
+        margin-left 0
+        &:after
+            content ''
+            position: absolute
+            width 1px
+            height 40px
+            background-color #ded9d2
+            right 0px
+            pos-center-h()
+
++below(1280)
+    .header
+        &__city,
+        &__phone
+            display block
+        &__city
+            margin-top -10px
++below(1100)
+    .header
+        &__search
+            top: auto
+            bottom: 10px
+            transform translateY(0)
+
++below($laptop)
+    .header
+        &__search
+            bottom 10px
+            top auto
+            right auto
+            left 0
+            width 100%
+
+        &__container
+            height auto
+            padding-top 20px
+            padding-bottom 65px
+
+        &__container-inner
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+        &__item_contacts
+            &:after
+                display none
+
+
++below($mobile)
+    .header
+        &__container
+            height auto
+            padding-top 70px
+
+        &__item_logo
+            position: absolute
+            top 15px
+            pos-center-w()
+
+        &__logo
+            width auto

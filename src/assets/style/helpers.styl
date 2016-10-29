@@ -1,0 +1,142 @@
+// margin/padding top, left, etc.
+for s in (0 5 10 15 20 25 30 35 40 50 60 100)
+	for p in ((b bottom) (t top) ( l left) (r right))
+		$size = s + 0px
+
+		.h-m{p[0]}_{s}
+			margin-{p[1]} $size
+
+		.h-p{p[0]}_{s}
+			padding-{p[1]} $size
+
+// text align
+for $i in (center left right)
+	.h-align_{$i}
+		text-align $i
+
+// text vertical-align
+for $i in (middle top bottom)
+	.h-valign_{$i}
+		vertical-align $i
+
+		
+//width
+.h-w_full
+	width 100%
+
+// pull
+.h-pull_left
+	float left
+
+.h-pull_right
+	float right
+
+// clearfix
+.clearfix
+	clear both
+
+//line-height
+.h-lh_15
+	line-height 1.5
+.h-lh_1
+	line-height 1
+
+// colors
+.h-color
+	$listModColor = (
+		('red' $color-red)\
+		('white' #fff)\
+		('green' $color-green)\
+		('blue' $color-blue)\
+		('main' $color-main)\
+		('grey' $color-grey)\
+		('grey-light' $color-grey-light)\
+		('yellow' $color-yellow)\
+		('second' $color-second)\
+		)
+	for mod in $listModColor
+		&_{mod[0]}
+			color mod[1]
+
+
+
+// font sizings
+for $s in (10 12 14 16 18 20 22 24 28 32 36 40 50)
+	.h-fz_{$s}
+		font-size $s + 0px
+
+.h-text_bold
+	font-family $base-ff-bold
+
+.h-text_bold-mag
+	font-family $magistralbold
+
+// display and positions
+.h-display_none
+	display none
+
+.h-display_block
+	display block
+
+.h-display_inline-block
+	display inline-block
+
+.h-display_inline
+	display inline
+
+.h-wrap_hidden
+	position fixed
+	overflow hidden
+
+//flex
+.h-display_flex
+	display flex
+
+.h-flex-dir-row
+	flex-direction row
+
+.h-flex_reverse-row
+	flex-direction row-reverse
+.h-flex-align-center
+	align-items center
+
+.h-flex-jc-space-between
+	justify-content space-between
+
+//todo: переписать название хелпера
+
+//links
+/*.h-link
+	text-decoration none
+	padding-bottom 1px
+	border-bottom 1px solid $color-link
+	cursor: pointer
+	color: $color-link
+	&:hover
+		color: $color-link-hover
+		border-bottom-color: $color-link-hover
+
+	$listModStyle = (dashed dotted)
+	$listModColor = (
+		('white' #fff)\
+		('black' #000)\
+		('grey' $color-grey)
+		)
+
+	for mod in $listModColor
+		&_{mod[0]}
+			border-bottom-color mod[1]
+			color mod[1]
+			&-nohover
+				&:hover
+					border-bottom-color mod[1]
+					color mod[1]
+
+	for mod in $listModStyle
+		&_{mod}
+			border-bottom-style mod
+
+	&-hover-hide-border
+		&:hover
+			border-color transparent
+*/

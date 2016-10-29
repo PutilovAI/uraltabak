@@ -1,0 +1,7 @@
+mixin section-title(title, mod, attr)
+    - var title = title || ''
+    - var mod  = mod || ''
+    - var attr = attr || {}
+    .section__title(class=mod)&attributes(attr)
+        .section__title-content
+            .section__title-text=title

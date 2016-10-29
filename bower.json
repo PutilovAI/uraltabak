@@ -1,0 +1,16 @@
+{
+  "name": "ut",
+  "description": "",
+  "dependencies": {
+    "selectize": "^0.12.4"
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

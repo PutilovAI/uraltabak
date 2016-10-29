@@ -1,0 +1,32 @@
+.list
+    list-style: none
+    & li, &__item
+        margin-bottom 15px
+        font-size: $base-fs
+        line-height: $base-lh
+        padding-left: 40px
+        list-style: none
+        position: relative
+
+        &:before
+            content ''
+            width 10px
+            height @width
+            border 2px solid $color-second
+            position: absolute
+            left 0
+            top 10px
+    ol&, &_count
+        counter-reset: myCounter
+        & li, &__item
+            &:before
+                counter-increment: myCounter;
+                content:counter(myCounter) '.';
+                width auto
+                height auto
+                border none
+                position: absolute
+                left 0
+                top 1px
+                color $color-main
+                font-family: $magistralbold

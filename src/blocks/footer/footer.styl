@@ -1,0 +1,43 @@
+.footer
+    background: url(../images/pattern-footer.jpg) top left;
+    color #e9e4e0
+    font-size: 14px
+    line-height: 26px
+
+    &__container
+        padding 30px 0 35px
+        padding-left 195px
+
+    &__row
+        cf()
+
+    &__col
+        column(4/12, offset: 0, gutter: 3.67)
+
+    &__copyright
+        margin-bottom 30px
+        opacity: 0.8
+
+    &__warning
+        font-family $opensanscond
+        line-height: 1.3
+        font-size: 32px
+        color #ad8973
+        margin-top 50px
+
++below($laptop)
+    .footer
+        &__container
+            padding-left 0px
++below($mobile)
+    .footer
+        &__col
+            column(6/12, offset: 0, gutter: 2.5)
+        &__warning
+            font-size: 24px
+            margin-top 30px
++below($mobileSmall)
+    .footer
+        &__col
+            column(12/12, offset: 0, gutter: 0)
+            margin-bottom 20px

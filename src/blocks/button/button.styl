@@ -1,0 +1,55 @@
+$button-br = 0.3em
+
+.button
+	border-radius $button-br
+	padding 1em 1.3em 1.1em
+	background-color $color-main
+	cursor pointer
+	border none
+	display inline-block
+	vertical-align: middle
+	text-decoration none
+	color #fff
+	text-align center
+	transition all 0.2s linear
+	outline none
+	user-select none
+
+	&:hover
+		color #fff
+		background-color lighten($color-main, 5%)
+
+	&_action
+		background-color $color-second
+		font-size 12px
+		text-transform uppercase
+		padding 1.1em 3em 1.15em
+
+		&:hover
+			color $base-fc
+			background-color $color-second-hover
+
+	&_long
+		padding-left: 5em
+		padding-right 5em
+
+	&_link
+		padding 1.1em 3em 1.15em
+		background-color transparent
+		border 2px solid $color-second
+		color $base-fc
+		text-transform: uppercase
+		font-size 12px
+		&:hover
+			color $base-fc
+			background-color $color-second-hover
+			border-color $color-second-hover
+
+.button-group
+	& .button
+		border-radius: 0 $button-br $button-br 0
+		&_link
+			padding 0.9em 3em 1em
+
+		&:first-child
+			border-radius: $button-br 0 0 $button-br

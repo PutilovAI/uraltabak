@@ -1,0 +1,160 @@
+.sidebar
+    position: relative
+    width 180px
+    z-index: 5
+    &__title
+        color $color-main
+        text-transform: uppercase
+        border-bottom: 1px solid rgba($color-main, 0.5)
+        padding-bottom: 13px;
+
+    &__list
+        position: relative
+        padding-top 5px
+
+    &__list-item-link
+        position: relative
+        padding 5px 0
+        display: block
+        text-decoration: none
+        padding-left 55px
+        min-height: 50px
+        height 0px
+        display: flex
+        align-items: center
+
+    &__list-item-link-text
+        text-transform uppercase
+        font-size: 12px
+        display: inline-block
+        line-height: 1.3em
+
+    &__list-item-link-icon
+        pos-center-h()
+        left 0
+        opacity: 0.7
+
+    &__list-hide-block
+        display none
+        position: absolute
+        top 0
+        left 100%
+        height 100%
+        min-height: 450px
+        min-width: 320px
+        background: #f6f6f6
+        box-shadow: 5px 5px 5px 0px rgba($color-main, 0.3)
+        border 1px solid rgba($color-main, 0.3)
+        z-index: 20
+
+    &__list-hide-block-container
+        padding 30px 25px
+
+    &__list-hide-block-row
+        margin-bottom 25px
+
+    &__list-hide-block-link
+        font-size: 14px
+        text-decoration: none
+        display: block
+
+    &__list-item:hover
+        & ^[0]__list-hide-block
+            display: block
+
+        & ^[0]__list-item-link-icon
+            opacity: 1
+
+    &__list-item.active
+        & ^[0]__list-item-link
+            color $color-link-hover
+        & ^[0]__list-item-link-icon
+            opacity: 1
+
+    &__button
+        display: none
+        position absolute
+        right -35px
+        top 0
+        width 35px
+        height 50px
+        border 1px solid rgba($color-main, 1)
+        border-radius: 0 5px 5px 0
+        padding 8px;
+        transition all 0.3s ease
+        background-color rgba($color-main, 1)
+        text-align: center;
+        cursor pointer
+
+    &__button-decor
+        display inline-block
+        width 4px
+        height 4px
+        border-radius: 50%
+        position: relative
+        background #fff
+        top 2px
+        &:after, &:before
+            content ''
+            position: absolute
+            width 4px
+            height 4px
+            left 0
+            border-radius: 50%
+            background #fff
+
+        &:after
+            top -10px
+        &:before
+            top 10px
+
+    &__button.show
+        & ^[0]__button-decor
+            background transparent
+            width 0
+            height 0
+            &:after, &:before
+                width 15px
+                height 1px
+                left -7px
+                border-radius: 0
+                top 0px
+
+            &:after
+                transform rotate(45deg)
+            &:before
+                transform rotate(-45deg)
+
+
++below($laptop)
+    .sidebar
+        position: absolute
+        width: 220px;
+        background: #fff;
+        box-shadow: 2px 2px 4px 0 rgba($color-main, 0.3)
+        border-radius 0 0 10px 0
+        transform: translateX(0)
+        transition transform 0.5s ease
+        &__button
+            display block
+        &__title
+            padding 20px 20px 13px
+        &__list
+            padding 10px 0 10px
+        &__list-item-link
+            padding-right 20px
+            padding-left: 75px
+            &:hover
+                background-color rgba($color-main, 0.1)
+        &__list-item-link-icon
+            left 20px
+
+        &__list-item
+            &:hover
+                & ^[0]__list-hide-block
+                    display none
+            &.active
+                & ^[0]__list-item-link
+                    background-color rgba($color-main, 0.2)
+        &.show
+            transform: translateX(220px)

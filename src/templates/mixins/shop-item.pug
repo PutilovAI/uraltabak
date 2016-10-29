@@ -1,0 +1,25 @@
+mixin shop-item(data)
+    - var data = data || {}
+
+    if (data.spec)
+        .usweb-shop-special
+            .eshopStikers3t
+                .stikers_text
+
+            .usweb-shop-special-img-box
+                 a.fancybox_img(href="#" title=data.name rel="eshop-part")
+                    img(src=data.img title=data.name alt=data.name)
+
+            .usweb-shop-special-title
+                a(href="#")=data.name
+    else
+        .shop_item&attributes({'itemscope':'', 'itemtype':'http://schema.org/Offer'})
+            .img_box
+                a(href="#" title=''+data.name)
+                    img(src=data.img title=data.name alt=data.name)
+
+            .eshopTitle
+                a(href="#" title=''+data.name itemprop="url")
+                    span(itemprop="name")=data.name
+
+            .txt_box &nbsp;

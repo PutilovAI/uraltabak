@@ -1,0 +1,23 @@
+.sidebar.js-sidebar
+    .sidebar__title Каталог товаров
+    .sidebar__list.js-sidebar-list
+        each item, i in [['cigarette', 'Сигареты'], ['cigar','Сигары'], ['cigarill','Сигариллы'], ['hookah','Кальяны'], ['tobacco','Табак'], ['coal', 'Уголь'], ['accessories', 'Аксессуары'], ['set', 'Комплектующие'], ['electro', 'Электронные сигареты']]
+            - var active = ''
+            if (i == 3)
+                - active = 'active'
+            .sidebar__list-item(class=active)
+                a(href="#").sidebar__list-item-link
+                    .sidebar__list-item-link-icon.icon(class='icon_' + item[0])
+                    .sidebar__list-item-link-text=item[1]
+                .sidebar__list-hide-block.js-sidebar-hide-block
+                    .sidebar__list-hide-block-container
+                        if (i%3 == 2)
+                            each link in ['Агер (34)', 'Аладин (34)', 'MEG (26)', 'Кхалил Мамун (33)', 'Фабула (Темпл 45) (10)','Одноразовые электронные кальяны (12)','Кальян Ами (46)', 'Кальян MAGIX (3)', 'Кальяны Хабиб (3)', 'Кальяны F one (1)']
+                                .sidebar__list-hide-block-row
+                                    a.sidebar__list-hide-block-link(href="#")=link
+                        else
+                            each link in ['Одноразовые электронные кальяны (12)','Кальян Ами (46)', 'Кальян MAGIX (3)', 'Кальяны Хабиб (3)', 'Кальяны F one (1)']
+                                .sidebar__list-hide-block-row
+                                    a.sidebar__list-hide-block-link(href="#")=link
+    .sidebar__button.js-sidebar-button
+        .sidebar__button-decor

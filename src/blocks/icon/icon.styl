@@ -1,0 +1,20 @@
+/*icon($name, $width, $height = $width)
+    &_{$name}
+        background-image url('../images/icon_'+$name+'.svg')
+        width $width
+        height $height
+*/
+
+.icon
+    display inline-block
+    vertical-align: middle
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 100%
+
+    $arrIconSidebar = ('cigarette' 'cigar' 'cigarill' 'hookah' 'tobacco' 'coal' 'accessories' 'set' 'electro')
+
+    for $name in $arrIconSidebar
+        icon($name, 40px)
+
+    icon('sheet', 27px, 13px)

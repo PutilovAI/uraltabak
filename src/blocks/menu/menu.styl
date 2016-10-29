@@ -1,0 +1,87 @@
+.menu
+    position: relative
+    &__item
+        float left
+        margin-right 30px
+        &:last-child
+            margin-right 0
+
+
+    &__item-link
+        display: block
+        text-decoration: none
+        text-transform: lowercase
+
+    &__button
+        display: none
+        width 45px
+        height 35px
+        border 1px solid rgba($color-main, 0.5)
+        border-radius: 5px
+        padding 8px;
+        transition all 0.3s ease
+
+    &__button-decor
+        width 100%
+        height 17px
+        position: relative
+        border-top 1px solid rgba($color-main, 0.5)
+        border-bottom 1px solid rgba($color-main, 0.5)
+        &:after
+            content ''
+            position: absolute
+            width 100%
+            top 49%
+            height 1px
+            background rgba($color-main, 0.5)
+
+    &__button.active
+        background-color rgba($color-main, 0.5)
+        border-color transparent
+        & ^[0]__button-decor
+            border-color #fff
+            &:after
+                background #fff
+
++below($laptop)
+    .menu
+        z-index: 15
+        position: relative
+
+        &__item-link
+            display: block
+            padding 12px 30px
+            background #fff
+            &:hover
+                background lighten($color-main, 20%)
+                color #fff
+
+        &__item
+            background #fff
+            float none
+            margin-right 0
+            border-bottom 1px solid rgba($color-main, 0.2)
+            &:last-child
+                border-bottom: none
+
+            &.active
+                & ^[0]__item-link
+                    background rgba($color-main, 1)
+                    color #fff
+
+
+        &__items
+            display none
+            position: absolute
+            z-index: 10
+            top 35px
+            right 0
+            box-shadow: 2px 2px 4px 0 rgba($color-main, 0.2)
+            border-radius: 5px
+            overflow: hidden
+            &.active
+                display block
+
+
+        &__button
+            display block

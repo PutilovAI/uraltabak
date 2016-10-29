@@ -1,0 +1,69 @@
+fontFace($font){
+    @font-face {
+        font-family: $font;
+        src: url('../fonts/'+$font+'/'+$font+'.eot');
+        src: url('../fonts/'+$font+'/'+$font+'.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/'+$font+'/'+$font+'.woff') format('woff'),
+             url('../fonts/'+$font+'/'+$font+'.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+pos-center()
+    position: absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+
+pos-center-w()
+    position: absolute
+    left 50%
+    transform translateX(-50%)
+
+pos-center-h()
+    position: absolute
+    top 50%
+    transform translateY(-50%)
+
+flex-center()
+    display flex
+    align-items: center
+    justify-content: center
+
+placeholder()
+    &::-webkit-input-placeholder
+        {block}
+    &::-moz-placeholder
+        {block}
+    &:-ms-input-placeholder
+        {block}
+    &:-moz-placeholder
+        {block}
+
+icon($name, $width, $height = $width)
+    &_{$name}
+        background-image url('../images/icon_'+$name+'.svg')
+        width $width
+        height $height
+
+$resolution = 480 768 1024 1366
+
+//resolution width
+$notebook  = 3 //1366
+$laptop    = 2 //1024
+$mobile    = 1 //768
+$mobileSmall = 0 //768
+
+above($val)
+    if $val < 100
+        $val = $resolution[$val]
+    $condition = 'screen and (min-width: %spx)' % $val
+    @media $condition
+        {block}
+below($val)
+    if $val < 100
+        $val = $resolution[$val]
+    $condition = 'screen and (max-width: %spx)' % $val
+    @media $condition
+        {block}

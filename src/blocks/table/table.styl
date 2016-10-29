@@ -1,0 +1,32 @@
+.table
+    $color-border = rgba(#000, 0.1)
+    width 100%
+    table-layout: fixed
+    border-radius: 5px
+    overflow: hidden
+    border 1px solid $color-border
+    border-collapse: separate
+    & th, & td
+        padding 15px 15px 15px 30px
+        line-height: 1.5
+        &:last-child
+            border-right none
+
+    & th
+        font-weight: normal
+        color #fff
+        background-color: $color-main
+        border-bottom 2px solid $color-second
+        border-right 1px solid $color-border
+        text-align: left
+
+    & td
+        border-bottom 1px solid $color-border
+        border-right 1px solid $color-border
+
+    & tbody tr
+        &:nth-child(even)
+            background #f7f7f7
+        &:last-child
+            td
+                border-bottom none
