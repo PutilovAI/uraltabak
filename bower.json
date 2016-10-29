@@ -2,7 +2,8 @@
   "name": "ut",
   "description": "",
   "dependencies": {
-    "selectize": "^0.12.4"
+    "selectize": "^0.12.4",
+    "jquery.maskedinput": "jquery-maskedinput#^1.4.1"
   },
   "devDependencies": {},
   "license": "MIT",

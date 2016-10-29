@@ -10,5 +10,7 @@ if $grid == true
         .col_{i}
             column(i/12, offset: 0, gutter: 3.67)
 
-        .shift_{i}
-            shift(i/12, offset: 0, gutter: 3.67)
+    +below($mobile)
+        for i in (1..12)
+            .col_xs-{i}
+                column(i/12, offset: 0, gutter: 3.67)
