@@ -3,9 +3,12 @@
   "description": "",
   "dependencies": {
     "selectize": "^0.12.4",
-    "jquery.maskedinput": "jquery-maskedinput#^1.4.1"
+    "jquery.maskedinput": "jquery-maskedinput#^1.4.1",
+    "owl.carousel": "^2.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "selectize": "^0.12.4"
+  },
   "license": "MIT",
   "ignore": [
     "**/.*",

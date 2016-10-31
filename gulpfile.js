@@ -47,8 +47,21 @@ gulp.task('js', function() {
 	return gulp.src([
 			'./node_modules/jquery/dist/jquery.min.js',
 			'./src/assets/libs/owl.carousel/dist/owl.carousel.min.js',
-            './src/assets/libs/selectize/dist/js/standalone/selectize.js',
-            './src/assets/libs/jquery.maskedinput/dist/jquery.maskedinput.js',
+      './src/assets/libs/selectize/dist/js/standalone/selectize.js',
+      './src/assets/libs/jquery.maskedinput/src/jquery.maskedinput.js',
+			'./src/blocks/**/*.js',
+			'./src/assets/js/*.js'
+		])
+		.pipe( concat('main.js') )
+		.pipe( gulp.dest('./dist/assets/js') )
+        .pipe( browserSync.reload({stream: true}) )
+})
+
+gulp.task('js:prod', function() {
+	return gulp.src([
+			'./src/assets/libs/owl.carousel/dist/owl.carousel.min.js',
+      './src/assets/libs/selectize/dist/js/standalone/selectize.js',
+      './src/assets/libs/jquery.maskedinput/src/jquery.maskedinput.js',
 			'./src/blocks/**/*.js',
 			'./src/assets/js/*.js'
 		])
@@ -117,8 +130,9 @@ gulp.task('watch', function() {
 gulp.task('min', ['style:min', 'js:min', 'img:min']);
 
 gulp.task('default', ['style', 'js', 'html', 'fonts', 'img']);
+gulp.task('default:prod', ['style', 'js:prod', 'html', 'fonts', 'img']);
 gulp.task('dev', ['default', 'connect', 'watch']);
 
-gulp.task('prod', ['default'], function(){
+gulp.task('prod', ['default:prod'], function(){
 	gulp.start('min')
 });
