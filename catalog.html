@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <!--link(rel="shortcut icon" href="'./assets/images/favicon.ico" type="image/x-icon")-->
+    <link href="./assets/css/main.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__page">
+            <div class="wrapper__page-top">
+                <div class="header">
+                    <div class="container">
+                        <div class="header__container">
+                            <div class="header__item header__item_logo">
+                                <div class="header__logo">
+                                    <a class="logo" href="/"></a>
+                                </div>
+                            </div>
+                            <div class="header__container-inner">
+                                <div class="header__item header__item_contacts">
+                                    <div class="header__city">
+                                        <div class="city-change">
+                                            <select class="city-change__select js-select">
+                                                <option value="0">Екатеринбург</option>
+                                                <option value="1">Нижневартовск</option>
+                                                <option value="2">Пермь</option>
+                                                <option value="3">Челябинск</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="header__phone">
+                                        <div class="phone">
+                                            <div class="phone__number"><span class="phone__number-prefix">+7 (343)&nbsp;</span><span class="phone__number-main">286-98-72</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__item header__item_menu">
+                                    <div class="menu">
+                                        <div class="menu__items js-menu-items">
+                                            <div class="menu__item"><a class="menu__item-link" href="#">О компании</a>
+                                            </div>
+                                            <div class="menu__item active"><a class="menu__item-link" href="#">Покупателям</a>
+                                            </div>
+                                            <div class="menu__item"><a class="menu__item-link" href="#">Сотрудничество</a>
+                                            </div>
+                                            <div class="menu__item"><a class="menu__item-link" href="#">Контакты</a>
+                                            </div>
+                                        </div>
+                                        <div class="menu__button js-menu-button">
+                                            <div class="menu__button-decor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__search">
+                                <form class="search" action="#">
+                                    <input class="search__input" placeholder="поиск">
+                                    <button class="search__button"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper__content">
+                    <div class="wrapper__content-second">
+                        <div class="sidebar js-sidebar">
+                            <div class="sidebar__title">Каталог товаров</div>
+                            <div class="sidebar__list js-sidebar-list">
+                                <div class="sidebar__list-item">
+                                    <a class="sidebar__list-item-link" href="#">
+                                        <div class="sidebar__list-item-link-icon icon icon_cigarette"></div>
+                                        <div class="sidebar__list-item-link-text">Сигареты</div>
+                                    </a>
+                                    <div class="sidebar__list-hide-block js-sidebar-hide-block">
+                                        <div class="sidebar__list-hide-block-container">
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Одноразовые электронные кальяны (12)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян Ами (46)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян MAGIX (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны Хабиб (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны F one (1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar__list-item">
+                                    <a class="sidebar__list-item-link" href="#">
+                                        <div class="sidebar__list-item-link-icon icon icon_cigar"></div>
+                                        <div class="sidebar__list-item-link-text">Сигары</div>
+                                    </a>
+                                    <div class="sidebar__list-hide-block js-sidebar-hide-block">
+                                        <div class="sidebar__list-hide-block-container">
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Одноразовые электронные кальяны (12)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян Ами (46)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян MAGIX (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны Хабиб (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны F one (1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar__list-item">
+                                    <a class="sidebar__list-item-link" href="#">
+                                        <div class="sidebar__list-item-link-icon icon icon_cigarill"></div>
+                                        <div class="sidebar__list-item-link-text">Сигариллы</div>
+                                    </a>
+                                    <div class="sidebar__list-hide-block js-sidebar-hide-block">
+                                        <div class="sidebar__list-hide-block-container">
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Агер (34)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Аладин (34)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">MEG (26)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кхалил Мамун (33)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Фабула (Темпл 45) (10)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Одноразовые электронные кальяны (12)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян Ами (46)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян MAGIX (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны Хабиб (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны F one (1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar__list-item active">
+                                    <a class="sidebar__list-item-link" href="#">
+                                        <div class="sidebar__list-item-link-icon icon icon_hookah"></div>
+                                        <div class="sidebar__list-item-link-text">Кальяны</div>
+                                    </a>
+                                    <div class="sidebar__list-hide-block js-sidebar-hide-block">
+                                        <div class="sidebar__list-hide-block-container">
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Одноразовые электронные кальяны (12)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян Ами (46)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян MAGIX (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны Хабиб (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны F one (1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar__list-item">
+                                    <a class="sidebar__list-item-link" href="#">
+                                        <div class="sidebar__list-item-link-icon icon icon_tobacco"></div>
+                                        <div class="sidebar__list-item-link-text">Табак</div>
+                                    </a>
+                                    <div class="sidebar__list-hide-block js-sidebar-hide-block">
+                                        <div class="sidebar__list-hide-block-container">
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Одноразовые электронные кальяны (12)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян Ами (46)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян MAGIX (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны Хабиб (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны F one (1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar__list-item">
+                                    <a class="sidebar__list-item-link" href="#">
+                                        <div class="sidebar__list-item-link-icon icon icon_coal"></div>
+                                        <div class="sidebar__list-item-link-text">Уголь</div>
+                                    </a>
+                                    <div class="sidebar__list-hide-block js-sidebar-hide-block">
+                                        <div class="sidebar__list-hide-block-container">
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Агер (34)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Аладин (34)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">MEG (26)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кхалил Мамун (33)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Фабула (Темпл 45) (10)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Одноразовые электронные кальяны (12)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян Ами (46)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян MAGIX (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны Хабиб (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны F one (1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar__list-item">
+                                    <a class="sidebar__list-item-link" href="#">
+                                        <div class="sidebar__list-item-link-icon icon icon_accessories"></div>
+                                        <div class="sidebar__list-item-link-text">Аксессуары</div>
+                                    </a>
+                                    <div class="sidebar__list-hide-block js-sidebar-hide-block">
+                                        <div class="sidebar__list-hide-block-container">
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Одноразовые электронные кальяны (12)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян Ами (46)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян MAGIX (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны Хабиб (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны F one (1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar__list-item">
+                                    <a class="sidebar__list-item-link" href="#">
+                                        <div class="sidebar__list-item-link-icon icon icon_set"></div>
+                                        <div class="sidebar__list-item-link-text">Комплектующие</div>
+                                    </a>
+                                    <div class="sidebar__list-hide-block js-sidebar-hide-block">
+                                        <div class="sidebar__list-hide-block-container">
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Одноразовые электронные кальяны (12)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян Ами (46)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян MAGIX (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны Хабиб (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны F one (1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar__list-item">
+                                    <a class="sidebar__list-item-link" href="#">
+                                        <div class="sidebar__list-item-link-icon icon icon_electro"></div>
+                                        <div class="sidebar__list-item-link-text">Электронные сигареты</div>
+                                    </a>
+                                    <div class="sidebar__list-hide-block js-sidebar-hide-block">
+                                        <div class="sidebar__list-hide-block-container">
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Агер (34)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Аладин (34)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">MEG (26)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кхалил Мамун (33)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Фабула (Темпл 45) (10)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Одноразовые электронные кальяны (12)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян Ами (46)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальян MAGIX (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны Хабиб (3)</a>
+                                            </div>
+                                            <div class="sidebar__list-hide-block-row"><a class="sidebar__list-hide-block-link" href="#">Кальяны F one (1)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar__button js-sidebar-button">
+                                <div class="sidebar__button-decor"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper__content-main">
+                        <div class="content">
+                            <div class="section">
+                                <div class="section__title section__title_main">
+                                    <div class="section__title-content">
+                                        <div class="section__title-text">Кхалил мамун</div>
+                                    </div>
+                                </div>
+                                <div class="shop_item-wrap">
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-1.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-2.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-2.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-2.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-2.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-1.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-2.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-2.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-2.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-2.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-1.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                    <div class="shop_item" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="img_box">
+                                            <a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)">
+                                                <img src="./assets/images/shop-khalip-2.png" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" alt="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)"
+                                                />
+                                            </a>
+                                        </div>
+                                        <div class="eshopTitle"><a href="#" title="Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)" itemprop="url"><span itemprop="name">Кальян Khalil Mamoon 1001 Nigth Double Decker (Халил Мамун 1001 ночь Дабл Деккер)</span></a>
+                                        </div>
+                                        <div class="txt_box">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1>Великолепные кальяны Кхалил Мамун</h1>
+                            <p>Пьер безухов носил панталоны с благодарностью. Вешала на уши лапшу. натурой, очень любила. Какая красота! первый акт софьи и обделались. Сквозняк, шустрый, как веник аккуратно бреющийся мужчина. Лодке быстро греб коромыслами
+                                измята, и излили ее. Царю телеграмму пар ног индии. Вошел негр, румяный с высоким жабо женщина, а в любви были. Двойной подошвой большое животное с нежностью смотрели друг хомячок.</p>
+                            <p>Дятел уселся и тут боец вспомнил, что в рифму. Природу и неприступная как веник автобусу. От боли ни одного ласкового слова, но забрался. Тикали солнечные часы безухова в фамусовском обществе слышались не. Слегка попахивая
+                                благодарностью виляя хвостом негр. Напала мысль состоит из сочинения: живописца поразила. Отличают от страха других домашних животных к автобусу бежала. Здесь была маша квадратных человека на диване изображением натюрморта
+                                двор.</p>
+                            <p>Животное с изображением натюрморта кудрявый хвостик, по моде женщина. Камешке, а за ней аккуратно. Сделать! длинными зимними холодными вечерами она вешала на лбу друг на друга. Старуха изергиль была маша птицы, кроме вороны.
+                                Животное с благодарностью виляя хвостом. Австралии составляет квадратных человека на двор. Находится кудрявый хвостик, по площади чеканя шаг, прошли танки задушило дездемону. Русской натурой, очень любила природу и сам
+                                не аккуратно бреющийся.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper__page-bot">
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__container">
+                            <div class="footer__row">
+                                <div class="footer__copyright">© 2010 — 2016 ООО «Урал Табак»</div>
+                            </div>
+                            <div class="footer__row">
+                                <div class="footer__col">
+                                    <div class="footer__content-row">г.Екатеринбург</div>
+                                    <div class="footer__content-row">Адрес: ул.Вишневая, 46 (вход со двора), 2й этаж.</div>
+                                    <div class="footer__content-row">Телефоны: +7 (343) 286-98-72, 201-52-44, 202-02-80</div>
+                                    <div class="footer__content-row">E-mail: info@utt66.ru</div>
+                                    <div class="footer__content-row">Skype: utt66skv</div>
+                                </div>
+                                <div class="footer__col">
+                                    <div class="footer__content-row">г.Сочи</div>
+                                    <div class="footer__content-row">Адрес: г.Сочи, ул. Яна Фабрициуса, 1</div>
+                                    <div class="footer__content-row">Телефоны в Сочи: +7 (918) 999-88-62</div>
+                                    <div class="footer__content-row">E-mail: sochi@utt66.ru</div>
+                                    <div class="footer__content-row">Skype: utt66skv</div>
+                                </div>
+                            </div>
+                            <div class="footer__row">
+                                <div class="footer__warning">Минздравсоцразвития РФ предупреждает: курение вредит вашему здоровью. Запрещено для детей! 18+</div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="wrapper__popups"></div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
