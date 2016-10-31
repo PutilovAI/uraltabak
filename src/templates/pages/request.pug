@@ -1,0 +1,48 @@
+extend ../layouts/main
+
+block content
+	.section
+		+section-title('Заявка', 'section__title_main')
+
+		p Мы бережно относимся к каждому нашему клиенту, заполните форму ниже и с вами свяжется менеджер по телефону или электронной почте. Вы можете указать удобное для вас время для звонка.
+
+		form.form.js-valid-form(action='#')
+			.row
+				.col_6.col_xs-12
+					.form__row
+						.input.js-valid-form__item
+							label.input__label.input__label_required(for='id-input-request-name') ФИО
+							input.input__text(type='text', id='id-input-request-name')
+							.input__error.js-valid-form__error Не введено имя
+					.form__row
+						.input.js-valid-form__item
+							label.input__label.input__label_required(for='id-input-request-email') E-mail
+							input.input__text(type='text', id='id-input-request-email')
+							.input__error.js-valid-form__error Не введен email
+					.form__row
+						.input
+							label.input__label(for='id-input-request-phone') Телефон
+							input.input__text.js-mask-phone(type='text', id='id-input-request-phone')
+
+					.form__row
+						.input
+							label.input__label(for='id-input-request-work') Организация
+							input.input__text(type='text', id='id-input-request-work')
+
+				.col_6.col_xs-12
+					.form__row
+						.input
+							label.input__label(for='id-input-request-extra') Дополнительная информация
+							textarea.input__textarea.input__textarea_request( id='id-input-request-extra')
+
+			.form__row
+				.input
+					input.input__radio(
+							type='radio',
+							name='radio-not-bot',
+							id='not-bot'
+							value='true'
+							)
+					label.input__radio-label(for='not-bot') Я не робот
+			.form__row.form__row_submit
+				button.button.button_action.js-valid-form__button(type='submit') Отправить
