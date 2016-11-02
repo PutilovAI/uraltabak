@@ -7,6 +7,9 @@ $(document).ready(function(){
     $owlWork.owlCarousel({
         loop: true,
         merge:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
         responsive : {
             // breakpoint from 0 up
             0 : {
